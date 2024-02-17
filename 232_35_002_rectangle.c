@@ -6,5 +6,5 @@ int main(){
     scanf("%f",&A);
     printf("enter B\t:");
     scanf("%f",&B);
-    printf("the area of cricle is %.3f",A*B);
+    printf("the area of reactabgle is %.3f",A*B);
 }
