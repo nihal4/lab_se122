@@ -1,10 +1,14 @@
 #include <stdio.h>
 
 int main(){
-    int number[2][2] = {{1,2},{3,4}};
-    for(int i = 0; i <  2; i++){
-        for(int j = 0; j <  2; j++){
-            printf("%d\t",number[i][j]);
+    int number[9] = {1,2,3,4,5,6,7,8,9};
+
+    for(int i = 0; i <  9; i++){
+        if (number[i] % 2 == 0){
+            printf("even: %d\n", number[i]);
+        }else{
+            continue;
         }
     }
+    
 }
