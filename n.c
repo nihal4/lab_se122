@@ -1,23 +1,25 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
 
-    int num1,factor_count=0;
-    scanf("%d",&num1);
-    for(int i = 1; i<=num1;i++){
+     int get_num;
 
-        if(num1 %i ==0){
-            factor_count = factor_count+1;
-        }else{
-            continue;
-        }
-        
-    }
-    //printf("%d",factor_count);
-    if(factor_count > 2){
-        printf("%d is not prime number",num1);
-    }else{
-        printf("%d is prime number",num1);
-    }
+     scanf("%d", &get_num);
+     int arr[5] = {1, 2, 3, 4, 5};
 
+     int True = 0;
+
+     for (int i = 0; i <= 5; i++)
+     {
+         if (arr[i] == get_num){
+           True = 1;
+         }
+     }
+
+     if (True == 1){
+          printf("FOUND");
+     }else{
+          printf("NOT FOUND");
+     }
 }
