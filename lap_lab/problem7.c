@@ -4,16 +4,16 @@ int main(){
     int arr[5] = {7,4,6,7,5};
     int ar_size = 5;
     
-    for (int step = 0; step < ar_size - 1; ++step) {
+    for (int i = 0; i < ar_size - 1; ++i) {
 
         int swapped = 0;
 
-        for (int i = 0; i < ar_size - step - 1; ++i) {
+        for (int j = 0; i < ar_size - i - 1; ++j) {
 
-            if (arr[i] > arr[i + 1]) {
-                int temp = arr[i];
-                arr[i] = arr[i + 1];
-                arr[i + 1] = temp;
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
                 swapped = 1;
             }
         }
