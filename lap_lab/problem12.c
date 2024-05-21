@@ -22,10 +22,10 @@ int main() {
   printf("Enter employee bonus: ");
   scanf("%f", &emp.bonus);
 
-  // Calculate total compensation
+  
   float total_compensation = emp.salary + emp.bonus;
 
-  // Print employee details
+  
   printf("\nEmployee Details:\n");
   printf("Name: %s", emp.name);
   printf("ID: %d\n", emp.id);
