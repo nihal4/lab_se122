@@ -13,7 +13,7 @@ int main(){
     for(int i =0; i<3;i++){
         for(int j=0; j<3; j++){
             if (srh == arr[i][j]){
-                printf("%d in index %d,%d",srh,i,j);
+                printf("%d in index %d,%d",srh,i+1,j+1);
                 found = 1;
             }
         }
